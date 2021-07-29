@@ -4,6 +4,7 @@ phases:
   install:
     commands:
     # Install Node 12
+    - apt-get update
     - apt-get install -y apt-transport-https
     - apt-get install -y nodejs
     # Install Yarn
