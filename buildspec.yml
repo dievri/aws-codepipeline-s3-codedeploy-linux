@@ -18,4 +18,8 @@ phases:
     # tests
     # build
     - yarn build 
-
+artifacts:
+  files:
+  - "**/*"
+  discard-paths: no
+  base-directory: build
