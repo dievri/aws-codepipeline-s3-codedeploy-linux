@@ -1,0 +1,18 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+    # Install Node 12
+    - apt install -y nodejs
+    # Install Yarn
+    - npm install -g yarn
+  pre_build:
+    commands:
+    # Install dependencies
+    - yarn
+  build:
+    commands:
+    # tests
+    # build
+    - yarn build 
